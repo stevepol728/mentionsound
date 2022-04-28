@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../layouts/head'); %>
+</head>
+<body>
+<!-- HOME HEADER SECTION START -->
+<div class="header-wrapper"> 
+  <!-- HOME HEADER START -->
+  <%- include('../layouts/header'); %>
+  <!-- HOME HEADER END --> 
+</div>
+<!-- HOME HEADER SECTION END --> 
+
+<!-- TERMS-OF-USE BANNER START -->
+<section class="account">
+  <div class="container">
+    <div class="terms-content">
+      <h1 class="terms-title">My Account</h1>
+    </div>
+  </div>
+</section>
+<!-- TERMS-OF-USE BANNER END --> 
+
+
+<section class="account-nav">
+  <div class="container">
+      <div class="account-nav-content">
+          <nav class="account-navigation">
+              <ul class="accountlist">
+                  <li class="accountlist-item">
+                      <a href="/home" class="accountlist-link">Profile</a>
+                  </li>
+                  <li class="accountlist-item">
+                      <a href="/favoritelist" class="accountlist-link active">Favorites</a>
+                  </li>
+                  <li class="accountlist-item">
+                      <a href="/downloadlist" class="accountlist-link">Downloads</a>
+                  </li>
+                  <li class="accountlist-item">
+                      <a href="/billingoverview" class="accountlist-link">Billing &amp; Invoices</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</section>
+
+<main class="favorite-main">
+    <div class="container">
+        <div class="favorite-main-content">
+            <h2 class="favorite-title">All Favorites</h2>
+            <p class="favorite-text">Viewing all lists. Click to select a single list to view.</p>
+        </div>
+    </div>
+</main>
+
+<section class="favorite-list">
+    <div class="container">
+        <div class="favorite-list-content">
+            <!-- PLAY LIST START -->
+            <div class="filter-playlist">
+                <ul class="playlist">
+                        
+                                            <li class="playlist-item">
+                        <div class="playlist-top">
+                            <div class="playbox">
+                                <div class="playinglist">
+                                    <button class="play-btn" id="playbtn1">
+                                        <figure class="play">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <rect width="3" height="20" x="7" y="2" fill="#333" rx="1.5"></rect>
+                                                <rect width="3" height="20" x="14" y="2" fill="#333" rx="1.5"></rect>
+                                            </svg>
+                                        </figure>
+        
+                                        <figure class="pause">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path fill="#333" d="M19.247 11.136L7.244 3.134c-.245-.163-.561-.179-.82-.04-.262.14-.424.41-.424.706v16.003c0 .295.162.567.422.706.119.063.249.094.378.094.155 0 .31-.045.444-.134l12.003-8.002c.222-.149.356-.398.356-.665 0-.268-.134-.517-.357-.666z"></path>
+                                                <mask id="qvx95cee6a" width="14" height="18" x="6" y="3" maskUnits="userSpaceOnUse">
+                                                    <path fill="#fff" d="M19.247 11.136L7.244 3.134c-.245-.163-.561-.179-.82-.04-.262.14-.424.41-.424.706v16.003c0 .295.162.567.422.706.119.063.249.094.378.094.155 0 .31-.045.444-.134l12.003-8.002c.222-.149.356-.398.356-.665 0-.268-.134-.517-.357-.666z"></path>
+                                                </mask>
+                                            </svg>
+                                        </figure>
+                                    </button>
+        
+                                    <div class="soundtrack" id="soundtrack1" data-url="679018_new_zealand_bird_exotic_kea_bird_calling_modulating_and_undulating_sound_bobbing_up_and_down_in_pitch_mono_2.wav" data-mp="679018_new_zealand_bird_exotic_kea_bird_calling_modulating_and_undulating_sound_bobbing_up_and_down_in_pitch_mono_2.mp3" data-title="New Zealand bird - exotic Kea bird - calling - modulating and undulating sound bobbing up and down in pitch - mono 2.">
+                                    <audio preload="auto" src="/assets/media/sounds_mp3/679018_new_zealand_bird_exotic_kea_bird_calling_modulating_and_undulating_sound_bobbing_up_and_down_in_pitch_mono_2.mp3"></audio>
+                                <wave style="display: block; position: relative; user-select: none; height: 44px; overflow: auto hidden;"><wave style="position: absolute; z-index: 3; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 0%; display: block; box-sizing: border-box; border-right: 1px solid rgb(213, 213, 213); pointer-events: none;"><canvas width="506" height="44" style="position: absolute; left: 0px; top: 0px; bottom: 0px; height: 100%; width: 506px;"></canvas></wave><canvas width="506" height="44" style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; height: 100%; pointer-events: none; width: 506px;"></canvas></wave></div>
+                                </div>
+
+                                <div class="track-download">
+                                    <button wire:click="wishlist('679018')" class="btn-wishlist btn-track" title="Add sound to favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path fill="#1A1A1A" fill-rule="evenodd" d="M3.73 13.072c-2.305-2.304-2.305-6.04 0-8.344 2.283-2.284 5.973-2.304 8.282-.06 2.308-2.244 5.998-2.224 8.282.06.988.988 1.58 2.27 1.703 3.634.049.532-.343 1.003-.875 1.051-.532.048-1.003-.344-1.051-.876-.084-.917-.48-1.776-1.145-2.441-1.549-1.549-4.06-1.549-5.608 0-.187.186-.353.391-.5.613-.383.576-1.23.576-1.612 0-.147-.222-.314-.427-.5-.613-1.55-1.549-4.06-1.549-5.609 0-1.548 1.548-1.548 4.06 0 5.608l6.914 6.915.578-.578c.378-.378.99-.378 1.368 0 .378.378.378.99 0 1.368l-1.262 1.262c-.378.378-.99.378-1.368 0l-7.598-7.6zM18.278 12v2.279H16c-.552 0-1 .447-1 1 0 .552.448 1 1 1h2.279v2.278c0 .553.447 1 1 1 .552 0 1-.447 1-1V16.28h2.278c.552 0 1-.448 1-1 0-.553-.448-1-1-1H20.28V12c0-.552-.448-1-1-1-.553 0-1 .448-1 1z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+    
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle btn-track" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" title="Share sound effect">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M7.267 11.467L14.733 7.2M7.267 13.6l7.466 4.267M16.867 8.267c1.178 0 2.133-.955 2.133-2.134C19 4.955 18.045 4 16.867 4c-1.179 0-2.134.955-2.134 2.133 0 1.179.955 2.134 2.134 2.134zM16.867 20.853c1.178 0 2.133-.955 2.133-2.133s-.955-2.134-2.133-2.134c-1.179 0-2.134.956-2.134 2.134s.955 2.133 2.134 2.133zM5.133 14.667c1.179 0 2.134-.955 2.134-2.133 0-1.179-.955-2.134-2.134-2.134C3.955 10.4 3 11.355 3 12.534c0 1.178.955 2.133 2.133 2.133z"></path>
+                                            </svg>
+                                        </button>
+    
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a class="dropdown-item" href="#" target="_blank" title="Share on Facebook">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                    <span class="text">facebook</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" target="_blank" title="Share on Twitter">
+                                                    <i class="fab fa-twitter"></i>
+                                                    <span class="text">twitter</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" target="_blank" title="Copy link to Clipboard">
+                                                    <i class="fas fa-link"></i>
+                                                    <span class="text">copy link</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   
+                                    
+                                                                                <a href="https://puresounds.net/products" class="btn-download btn-track" title="Download sound track">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path fill="#2D4A41" fill-rule="evenodd" d="M11.21 3v10.722l-3.219-3.219c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.024 0 1.414l4.925 4.925.01.01c.18.176.427.284.698.284.137 0 .267-.027.386-.077.113-.047.22-.116.312-.207l.01-.01 4.925-4.925c.391-.39.391-1.023 0-1.414-.39-.39-1.023-.39-1.414 0l-3.219 3.22V3c0-.552-.448-1-1-1s-1 .448-1 1zM3 20.241c0-.552.448-1 1-1h16.42c.553 0 1 .448 1 1 0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a> 
+                                                                                
+                                                                    </div>
+                            </div>
+    
+                            <div class="descriptionbox">
+                                <div class="title-durations">
+                                    <div class="description">
+                                        <p class="text">
+                                            New Zealand bird - exotic Kea bird - calling - modulating and undulating sound bobbing up and down in pitch - mono 2.
+                                        </p>
+                                    </div>
+        
+                                    <div class="durations">
+                                        <span class="durations-length">00:01</span>
+                                    </div>
+                                </div>
+    
+                                <div class="download-collapse">
+                                    <div class="track-download">
+                                        <button wire:click="wishlist('679018')" class="btn-wishlist btn-track" title="Add sound to favorite">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path fill="#1A1A1A" fill-rule="evenodd" d="M3.73 13.072c-2.305-2.304-2.305-6.04 0-8.344 2.283-2.284 5.973-2.304 8.282-.06 2.308-2.244 5.998-2.224 8.282.06.988.988 1.58 2.27 1.703 3.634.049.532-.343 1.003-.875 1.051-.532.048-1.003-.344-1.051-.876-.084-.917-.48-1.776-1.145-2.441-1.549-1.549-4.06-1.549-5.608 0-.187.186-.353.391-.5.613-.383.576-1.23.576-1.612 0-.147-.222-.314-.427-.5-.613-1.55-1.549-4.06-1.549-5.609 0-1.548 1.548-1.548 4.06 0 5.608l6.914 6.915.578-.578c.378-.378.99-.378 1.368 0 .378.378.378.99 0 1.368l-1.262 1.262c-.378.378-.99.378-1.368 0l-7.598-7.6zM18.278 12v2.279H16c-.552 0-1 .447-1 1 0 .552.448 1 1 1h2.279v2.278c0 .553.447 1 1 1 .552 0 1-.447 1-1V16.28h2.278c.552 0 1-.448 1-1 0-.553-.448-1-1-1H20.28V12c0-.552-.448-1-1-1-.553 0-1 .448-1 1z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+        
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle btn-track" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" title="Share sound effect">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M7.267 11.467L14.733 7.2M7.267 13.6l7.466 4.267M16.867 8.267c1.178 0 2.133-.955 2.133-2.134C19 4.955 18.045 4 16.867 4c-1.179 0-2.134.955-2.134 2.133 0 1.179.955 2.134 2.134 2.134zM16.867 20.853c1.178 0 2.133-.955 2.133-2.133s-.955-2.134-2.133-2.134c-1.179 0-2.134.956-2.134 2.134s.955 2.133 2.134 2.133zM5.133 14.667c1.179 0 2.134-.955 2.134-2.133 0-1.179-.955-2.134-2.134-2.134C3.955 10.4 3 11.355 3 12.534c0 1.178.955 2.133 2.133 2.133z"></path>
+                                                </svg>
+                                            </button>
+        
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#" target="_blank" title="Share on Facebook">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                        <span class="text">facebook</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#" target="_blank" title="Share on Twitter">
+                                                        <i class="fab fa-twitter"></i>
+                                                        <span class="text">twitter</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#" target="_blank" title="Copy link to Clipboard">
+                                                        <i class="fas fa-link"></i>
+                                                        <span class="text">copy link</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        
+                                                                                                <a href="https://puresounds.net/products" class="btn-download btn-track" title="Download sound track">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path fill="#2D4A41" fill-rule="evenodd" d="M11.21 3v10.722l-3.219-3.219c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.024 0 1.414l4.925 4.925.01.01c.18.176.427.284.698.284.137 0 .267-.027.386-.077.113-.047.22-.116.312-.207l.01-.01 4.925-4.925c.391-.39.391-1.023 0-1.414-.39-.39-1.023-.39-1.414 0l-3.219 3.22V3c0-.552-.448-1-1-1s-1 .448-1 1zM3 20.241c0-.552.448-1 1-1h16.42c.553 0 1 .448 1 1 0 .553-.447 1-1 1H4c-.552 0-1-.447-1-1z" clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </a> 
+                                                                                                
+                                                                                </div>
+        
+                                    <div class="descriptioncollapse">
+                                        <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="collapseExample25">
+                            <div class="playlist-bottom">
+                                <div class="category">
+                                    <h5 class="title">Category</h5>
+                                    
+                                    <div class="categorylinks">
+                                         <a href="https://puresounds.net/subcategory/animals/birds" class="playlistlink">Animals / Birds</a>
+                                    </div>
+                                </div>
+
+                                <div class="tags">
+                                    <h5 class="title">Tags</h5>
+
+                                    <div class="taglinks">
+                                                                                    <a href="https://puresounds.net/tag/bird" class="playlistlink">bird,</a>   
+                                                                                    <a href="https://puresounds.net/tag/chirp" class="playlistlink">chirp,</a>   
+                                                                                    <a href="https://puresounds.net/tag/tui" class="playlistlink">tui,</a>   
+                                                                                    <a href="https://puresounds.net/tag/woodpecker" class="playlistlink">woodpecker,</a>   
+                                                                                </div>
+                                </div>
+
+                                <div class="library">
+                                    <h5 class="title">Library</h5>
+
+                                    <div class="librarylinks">
+                                        <a class="playlistlink">Lynne Publishing</a>
+                                    </div>
+                                </div>
+
+                                <div class="quality">
+                                    <h5 class="title">WAV, 44.1kHz, 16bit</h5>
+
+                                    <p class="qualitytext">
+                                        WAV, 44.1kHz, 16bit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                                </ul>
+            </div>
+            <!-- PLAY LIST END -->
+                        <!-- jPlayer here -->
+        <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata" src="https://puresounds.net/assets/media/sounds_mp3/679018_new_zealand_bird_exotic_kea_bird_calling_modulating_and_undulating_sound_bobbing_up_and_down_in_pitch_mono_2.mp3" title="New Zealand bird - exotic Kea bird - calling - modulating and undulating sound bobbing up and down in pitch - mono 2."></audio></div>
+        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player" style="display: none">
+            <div class="jp-type-playlist">
+                <div class="jp-gui jp-interface">
+                    <ul class="jp-controls">
+                        <li>
+                            <a class="jp-previous" href="javascript:;" tabindex="1" title="Previous">Previous</a>
+                        </li>
+                        <li>
+                            <a class="jp-play" href="javascript:;" style="" tabindex="1" title="Play">Play</a>
+                        </li>
+                        <li>
+                            <a class="jp-pause" href="javascript:;" style="display: none;" tabindex="1" title="Pause">Pause</a>
+                        </li>
+                        <li>
+                            <a class="jp-next" href="javascript:;" tabindex="1" title="Next">Next</a>
+                        </li>
+                        <li>
+                            <a class="jp-autoplay on" href="javascript:;" tabindex="1" title="disable autoplay">Play All</a>
+                        </li>
+                        <li>
+                            <a class="jp-mute" href="javascript:;" tabindex="1" title="Mute">Mute</a>
+                        </li>
+                        <li>
+                            <a class="jp-unmute" href="javascript:;" style="display: none;" tabindex="1" title="Unmute">Unmute</a>
+                        </li>
+                    </ul>
+                    <div class="jp-progress jp-active">
+                        <div class="jp-seek-bar" style="width: 100%;">
+                            <div class="jp-play-bar" style="width: 0%;">
+                                <div class="jp-timeline">
+                                    <div class="jp-current-time">00:00</div>
+                                    <div class="jp-duration">-00:01</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value" style="width: 80%;"></div>
+                    </div>
+                    <div class="jp-title-content">
+                        <div>
+                            <span class="jp-label">Now playing:</span><span class="jp-title">New Zealand bird - exotic Kea bird - calling - modulating and undulating sound bobbing up and down in pitch - mono 2.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jp-playlist">
+                    <ul style=""><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">New Zealand bird - exotic Kea bird - calling - modulating and undulating sound bobbing up and down in pitch - mono 2.</a></div></li></ul>
+                </div>
+                <div class="jp-no-solution" style="display: none;">
+                    To play the media, your browser needs to have javascript enabled
+                </div>
+            </div>
+
+        </div>
+        <!-- jPlayer here -->
+        </div>
+    </div>
+</section>
+
+<!-- TERMS-OF-USE-MAIN SECTION END --> 
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+  <%- include('../layouts/footer'); %>
+</footer>
+<!-- FOOTER SECTION END --> 
+
+<!-- BOOTSTRAP SCRIPT --> 
+<script src="frontend/js/bootstrap.bundle.min.js"></script> 
+<script src="frontend/js/counter.js"></script> 
+<script src="frontend/js/responsive-search.js"></script> 
+<script src="frontend/js/jquery-3.5.1.min.js"></script> 
+<script>
+
+</script>
+</body>
+</html>
