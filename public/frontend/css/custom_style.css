@@ -1,0 +1,380 @@
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist .play-btn figure {
+    height: 3.375rem;
+    width: 3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jp-audio{
+    width: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+div.jp-type-playlist .jp-controls li a {
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+div.jp-interface ul.jp-controls a.jp-mute, div.jp-interface ul.jp-controls a.jp-unmute, div.jp-interface ul.jp-controls a.jp-volume-max {
+    height: 24px;
+    width: 24px;
+}
+div.jp-interface ul.jp-controls a {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+}
+
+div.jp-type-playlist .jp-previous, div.jp-type-playlist .jp-previous:hover.touch-out {
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    background: #fff url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_back.svg) no-repeat;
+}
+
+div.jp-type-playlist .jp-play {
+    background: #fff url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_play.svg) center no-repeat;
+}
+
+div.jp-type-playlist .jp-pause {
+    background: #fff url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_pause.svg) center no-repeat;
+    display: none;
+}
+
+div.jp-type-playlist .jp-next, div.jp-type-playlist .jp-next:hover.touch-out {
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    background: #fff url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_forward.svg) no-repeat;
+}
+
+div.jp-interface ul.jp-controls a.jp-autoplay.on {
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+}
+
+div.jp-interface ul.jp-controls a.jp-autoplay {
+    width: auto;
+    margin: 8px 10px;
+    text-indent: 0;
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 22px;
+    height: auto;
+    padding: 9px 38px 11px;
+    color: #1a1a1a;
+    font-family: HelveticaNeueLTPro-Bold,Helvetica,sans-serif;
+}
+
+div.jp-interface ul.jp-controls a.jp-mute, div.jp-interface ul.jp-controls a.jp-unmute, div.jp-interface ul.jp-controls a.jp-volume-max {
+    width: 22px;
+}
+
+div.jp-interface ul.jp-controls a.jp-mute {
+    background: url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_volume.svg) no-repeat;
+}
+
+div.jp-audio ul.jp-controls a.jp-mute, div.jp-audio ul.jp-controls a.jp-unmute, div.jp-audio ul.jp-controls a.jp-volume-max, div.jp-audio-stream ul.jp-controls a.jp-mute, div.jp-audio-stream ul.jp-controls a.jp-unmute, div.jp-audio-stream ul.jp-controls a.jp-volume-max {
+    margin: 17px 0 0 30px;
+}
+
+div.jp-interface ul.jp-controls a.jp-unmute {
+    background: url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icons_player_volume_mute.svg) no-repeat;
+}
+
+div.jp-audio a {
+    transition: none;
+}
+
+div.jp-audio ul.jp-controls, div.jp-audio-stream ul.jp-controls {
+    margin: 0 auto;
+}
+
+div.jp-interface ul.jp-controls {
+    min-height: 56px;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px 50px 6px 25px;
+    position: absolute;
+    top: 0;
+}
+
+div.jp-interface ul.jp-controls li {
+    display: inline;
+    float: left;
+}
+
+.jp-audio .jp-type-playlist .jp-progress {
+    height: 4px;
+    width: 100%;
+    background: url(https://www.soundsnap.com/themes/soundsnap4/jplayer/jQuery.jPlayer.2.7.0/seeking.gif) repeat-x top;
+    transition: all .3s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: inherit !important;
+}
+
+div.jp-type-playlist .jp-pause, div.jp-type-playlist .jp-play {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #333;
+}
+
+.jp-seek-bar {
+    background: #d2d2d2;
+    cursor: pointer;
+    height: 100%;
+    width: 0;
+}
+
+.jp-play-bar {
+    background: #33df98;
+    height: 100%;
+    width: 0;
+    cursor: pointer;
+}
+
+.jp-timeline {
+    display: none;
+    font-size: .8em;
+    position: relative;
+    z-index: 100;
+    width: 121px;
+    float: right;
+    left: 60px;
+    top: -6px;
+    overflow: hidden;
+}
+.jp-progress.jp-active:hover .jp-timeline {
+    display: block;
+}
+.jp-current-time, .jp-duration {
+    width: 60px;
+    text-align: center;
+    padding-top: 24px;
+    float: left;
+    line-height: 100%;
+    font-size: 12px;
+}
+.jp-current-time {
+    border-right: 1px solid #33df98;
+    color: #33df98;
+}
+div.jp-audio .jp-interface .jp-volume-bar, div.jp-audio-stream .jp-interface .jp-volume-bar {
+    margin-left: 412px;
+    top: 36px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+
+.jp-volume-bar {
+    background: #d8d8d8;
+    height: 6px;
+    overflow: hidden;
+    position: absolute;
+    width: 145px;
+    left: 0 !important;
+}
+
+.jp-volume-bar-value {
+    background: #1a1a1a;
+    height: 6px;
+}
+
+.jp-title-content {
+    height: 60px;
+    top: 4px;
+    margin-left: 557px;
+    margin-right: 285px;
+    padding: 4px 0 4px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jp-title-content div {
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+}
+
+.jp-title-content .jp-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #979797;
+    font-weight: 700;
+}
+
+.jp-title-content .jp-title {
+    display: block;
+    margin-top: 5px;
+}
+
+.jp-extra-player-controls {
+    float: none;
+    margin: 0 88px 0 0;
+    height: 42px;
+    list-style-type: none;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.fav-container {
+    position: relative;
+}
+
+div.jp-audio a {
+    transition: none;
+}
+
+.si_favorite {
+    background-image: url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icon-favorite-add.svg);
+}
+
+.ss_share {
+    background-image: url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icon-share.svg);
+}
+
+.ss_download {
+    background-color: #e0f4ee;
+    background-image: url(https://www.soundsnap.com/themes/soundsnap4/assets/player/icon-download.svg);
+}
+
+.ss_icons {
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1a1a1a;
+    display: inline-block;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.jp-audio .ss_icons+ul {
+    bottom: 45px;
+}
+
+.ss_icons+ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 100;
+    -moz-border-radius: 0 4px 4px;
+    -webkit-border-radius: 0 4px 4px;
+    -khtml-border-radius: 0 4px 4px;
+    border-radius: 0 4px 4px;
+    box-shadow: 0 4px 18px 0 rgb(0 0 0 / 13%);
+    margin-top: 5px;
+    list-style: none;
+    border: rgba(223,223,223,.5) 1px solid;
+}
+
+.share_groups li {
+    padding: 8px 16px 14px;
+}
+
+.ss_icons+ul li a {
+    display: block;
+    color: inherit;
+}
+
+div.jp-audio a {
+    transition: none;
+}
+
+.ss_icons+ul li.popover-header {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin-top: 12px;
+    color: #979797;
+}
+
+/* .jp-playlist {
+    margin: 20px;
+    display: none;
+}
+
+.jp-details ul, .jp-playlist ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.jp-type-playlist div.jp-playlist li:last-child {
+    border-bottom: medium none;
+    padding-bottom: 3px;
+}
+div.jp-type-playlist div.jp-playlist li:first-child {
+    border-top: medium none;
+    padding-top: 3px;
+} */
+div.jp-audio .jp-interface {
+    height: inherit;
+    margin: 0 auto;
+}
+
+div.jp-interface {
+    width: 100%;
+}
+.jp-progress.jp-active:hover {
+    height: 14px;
+    top: -10px;
+}
+.jp-type-playlist {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    height: 72px;
+    z-index: 100;
+}
+
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist .play-btn.playing .play{
+    display: flex;
+}
+
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist.playing figure.play{
+    display: flex;
+}
+
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist.playing figure.pause{
+    display: none;
+}
+
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist .soundtrack{
+    pointer-events: none;
+}
+
+.filter-playlist .playlist-item .playlist-top .playbox .playinglist.playing .soundtrack{
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.jp-audio.show{
+    display: block !important;
+}
+
+@media screen and (max-width: 48rem){
+    .filter-playlist .playlist-item .playlist-top .playbox .playinglist .play-btn figure{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+

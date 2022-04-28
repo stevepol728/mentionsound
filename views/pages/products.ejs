@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../layouts/head'); %>
+</head>
+<body>
+<!-- HOME HEADER SECTION START -->
+<div class="header-wrapper"> 
+  <!-- HOME HEADER START -->
+  <%- include('../layouts/header'); %>
+  <!-- HOME HEADER END --> 
+</div>
+<!-- HOME HEADER SECTION END --> 
+
+<!-- PRICING PLANS START -->
+<section class="pricing-plans">
+  <h1 class="pricing-title">Pricing and Plans</h1>
+  <p class="pricing-text">Join the world's most popular sounds website used by one million creatives</p>
+</section>
+<!-- PRICING PLANS END --> 
+
+<!-- PRICING CONTENT START -->
+<section class="pricing-content">
+  <div class="subscription">
+    <div class="subscription-header">
+      <p class="subscription-title">SUBSCRIBE AND SAVE</p>
+    </div>
+    <div class="subscription-body">
+      <div class="subscriptionbox">
+        <h2 class="title">1 Month Subscription</h2>
+        <div class="pricing">
+          <p class="price"> <span class="text"><sup>$</sup>20</span> <span class="time">/1 mos</span> </p>
+        </div>
+        <div class="pricetext"> <span class="text">$ 10 / month - Up to 10 Downloads </span>
+          <figure class="icon" data-bs-toggle="tooltip" data-bs-placement="left" title="Download up to 150 sounds from our collection of 400,000 sound effect in a 6 month period."> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dfdfdf" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </svg> </figure>
+          
+          <!-- Generated markup by the plugin -->
+          <div class="tooltip" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner"> Download up to 150 sounds from our collection of 400,000 sound effect in a 6 month period. </div>
+          </div>
+        </div>
+        <a href="#" class="btn-access btn-annual">Access Now</a> </div>
+      <div class="subscriptionbox">
+        <h2 class="title">6 Month Subscription</h2>
+        <div class="pricing">
+          <p class="price"> <span class="text"><sup>$</sup>149</span> <span class="time">/6 mos</span> </p>
+        </div>
+        <div class="pricetext"> <span class="text">$ 25 / month - Up to 150 Downloads</span>
+          <figure class="icon" data-bs-toggle="tooltip" data-bs-placement="left" title="Unlimited download access to 400,000 sound effects for a year."> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#dfdfdf" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </svg> </figure>
+          
+          <!-- Generated markup by the plugin -->
+          <div class="tooltip" role="tooltip">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner"> Unlimited download access to 400,000 sound effects for a year. </div>
+          </div>
+        </div>
+        <a href="#" class="btn-buy btn-annual">Access Now</a> </div>
+      <div class="subscriptionbox">
+        <h2 class="title">Custom Credit Plan</h2>
+        <h5 class="fs-5">Per Sound 1 Credit</h5>
+        <div class="pricing">
+          <p class="price"> <span class="time">3 Credit / 3 Sounds</span> </p>
+        </div>
+        <div class="">
+          <p id="setcurrentprice">$9</p>
+        </div>
+        <div class="pricetext"> <span class="text">Valid for use anytime within a year of purchase</span>
+          <p>chose your custom plan</p>
+        </div>
+        <div class="pricetext">
+          <button type="button" class="btn btn-light hoverefect w-25 setprice border-dark" data-number="3">3</button>
+          <button type="button" class="btn btn-light hoverefect w-25 setprice" data-number="10">10</button>
+          <button type="button" class="btn btn-light hoverefect w-25 setprice" data-number="25">25</button>
+          <button type="button" class="btn btn-light hoverefect w-25 setprice" data-number="100">100</button>
+          <button type="button" class="btn btn-light hoverefect plus" id="plusclick">+</button>
+        </div>
+        <div class="" id="customforminput">
+          <label class="px-3">Custom</label>
+          <input type="text" class="btn btn-light w-50" id="customin" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        </div>
+        <a href="#" class="btn-buy btn-annual" id="thirdproduct">Access Now</a> </div>
+    </div>
+  </div>
+  <div class="ourclients">
+    <p class="title">We are trusted by some of the biggest media and advertising brands</p>
+    <div class="clients">
+      <figure class="client"> <img src="frontend/images/pricing-clients/aljazeera-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/zynda-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/cbs.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/nokia-balck.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/nickelodeon-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/pixer-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/bbc-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/konami-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/mtv.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/vice-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/ncb.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/ogilvy-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/disnay-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/guitarhero-black.png" alt="client-brand-logo"> </figure>
+      <figure class="client"> <img src="frontend/images/pricing-clients/playstation-black.png" alt="client-brand-logo"> </figure>
+    </div>
+  </div>
+</section>
+<!-- PRICING CONTENT END --> 
+
+<!-- FAQ SECTION START -->
+<section class="faq-section">
+  <div class="container-lg container-fluid">
+    <div class="faq-section-content">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="accordion" id="accordionFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <span class="text">Can I still use the sounds even if my subscription expires and/or if I delete my account?</span> </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> Yes – you can use the sounds indefinitely, even if you currently have no active subscriptions or an active account on Soundsnap. The same rules of our <a href="#" class="faqlink" target="_blank">end user license</a> will continue to apply. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <span class="text">Who is the VAT field for?</span> </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> The VAT field only applies to EU companies that are VAT registered and have an EU VAT number. Once a valid number has been entered, the applied tax may be removed according to regulations about intra-community transactions. The VAT field should be left blank for anyone outside the European Union (companies and consumers) and also should be left blank for EU consumers and individuals (that are not VAT registered companies). </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <span class="text">Can I change my billing information on my account for future purchases?</span> </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> Yes, you can add a new card for Mastercard and Visa, but you cannot change your card to PayPal or vice versa or change a PayPal email to another email. To change your card, go to your profile page, then under Billing you will see an 'Edit' button next to your card info. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <span class="text">Is the payment page secure?</span> </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text">Yes, we use state of the art SSL encryption.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> <span class="text">What forms of payment do you accept?</span> </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text">We currently accept Visa, Mastercard, Paypal and American Express.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> <span class="text">Do you store my credit card information?</span> </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> No, your payment info never remains on our servers.
+                For Annual accounts, your credit information is saved securely by the credit card processor. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> <span class="text">How often will you bill my card? Do you have recurring billing?</span> </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> Annual subscribers will have their card charged annually. 6-month subscribers will be billed every six months.
+                You may cancel an Annual or 6-month subscription at any time from the billing settings page in your profile so that it will not be renewed. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> <span class="text">I’m about to make a purchase, and will need an invoice / receipt.</span> </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> You will be asked to enter your company information before completing your purchase.
+                You can later find your receipts by visiting your Profile and then selecting the 'Billing & Invoices' tab.
+                Once there, click on "Invoices" where you can view and download a pdf of your receipt. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"> <span class="text">I’m trying to buy something, but I’m getting a message saying there was a problem loading the payment process.</span> </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              <p class="text"> This may be caused by a plugin on your browser. If you are using a browser plugin (DuckDuckGo, Privacy Badger, etc), try <a href="#" target="_blank" class="faqlink">disabling it</a>, or use Private/ Incognito Mode before reloading the page. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQ SECTION END --> 
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-infos"> 
+        <!-- FOOTER LOGO START -->
+        <figure class="footer-logo"> <a href="https://www.mentionsound.net" class="logo"> <img src="frontend/images/logo-white.png" alt="site-logo"> </a>
+          <div id="google_translate_element" class="change-language"></div>
+        </figure>
+        <!-- FOOTER LOGO END --> 
+        
+        <!-- FOOTER NAV START -->
+        <nav class="footer-nav">
+            <div class="footlist-info">
+              <h4 class="footlist-title">Product</h4>
+              <ul class="footlist">
+                <li class="footlist-item"> <a href="browse.html" class="footlist-link">Browse Sounds</a> </li>
+                <li class="footlist-item"> <a href="products.html" class="footlist-link">Pricing</a> </li>
+                <li class="footlist-item"> <a href="faq.html" class="footlist-link">FAQ</a> </li>
+              </ul>
+            </div>
+            <div class="footlist-info">
+              <h4 class="footlist-title">Company</h4>
+              <ul class="footlist">
+                <li class="footlist-item"> <a href="job.html" class="footlist-link">Jobs</a> </li>
+                <li class="footlist-item"> <a href="" class="footlist-link">Blog</a> </li>
+                <li class="footlist-item"> <a href="education.html" class="footlist-link">Education</a> </li>
+                <li class="footlist-item"> <a href="contact.html" class="footlist-link">Contact</a> </li>
+                <li class="footlist-item"> <a href="affiliate.html" class="footlist-link">Affiliates</a> </li>
+              </ul>
+            </div>
+            <div class="footlist-info">
+              <h4 class="footlist-title">Legal</h4>
+              <ul class="footlist">
+                <li class="footlist-item"> <a href="license.html" class="footlist-link">Licence</a> </li>
+                <li class="footlist-item"> <a href="tos.html" class="footlist-link">Terms of Use</a> </li>
+                <li class="footlist-item"> <a href="privacy.html" class="footlist-link">Privacy Policy</a> </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- FOOTER NAV END --> 
+        
+        <!-- FOOTER SOCIAL LIST START -->
+        <ul class="social-list">
+          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-facebook-f"></i> </a> </li>
+          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-twitter"></i> </a> </li>
+          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-instagram"></i> </a> </li>
+        </ul>
+        <!-- FOOTER SOCIAL LIST END --> 
+        
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">mentionsound is owned and operated by Peterfield Limited </p>
+        <p class="copyright-text">Company number 12795957 </p>
+        <p class="copyright-text">Office 28b Cinnamon Park Crab lane, Fearnhead Warrington WA2 0XP </p>
+        <p class="copyright-text">Governed and controlled by the laws of the UK </p>
+        <p class="copyright-text">mentionsound &copy; 2021, All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER SECTION END --> 
+
+<!-- BOOTSTRAP SCRIPT --> 
+<script src="frontend/js/bootstrap.bundle.min.js"></script> 
+<script src="frontend/js/counter.js"></script> 
+<script src="frontend/js/responsive-search.js"></script> 
+<script src="frontend/js/jquery-3.5.1.min.js"></script> 
+<script>
+
+    $( "#search-field" ).keyup(function() {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'GET',
+            url: "search",
+            data: { 'searchkey': $( "#search-field" ).val() },
+            //datatype: 'JSON',
+            success: function (data) {
+                var htmld = '';
+                if (data.success) {
+                    if(data.success.length > 0){
+                       $('.search-suggestions').addClass('show');
+                       for(var i = 0; i < data.success.length; i++){
+                           console.log(data.success[i].name);
+                           htmld += '<li class="suggestion-list-item">';
+                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '</a>';
+                           htmld += '</li>';
+
+                       }
+                       $('#setsuggestionlist').html(htmld);
+                    }else{
+                       $('.search-suggestions').removeClass('show');
+                    }
+
+                }
+            }
+        });
+
+
+
+    if($("#search-field" ).val().length === 0){
+            $('.search-suggestions').removeClass('show');
+        }
+
+
+    });
+
+
+
+    $( "#responsivesearch-field" ).keyup(function() {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'GET',
+            url: "search",
+            data: { 'searchkey': $( "#responsivesearch-field" ).val() },
+            //datatype: 'JSON',
+            success: function (data) {
+                var htmld = '';
+                if (data.success) {
+                    if(data.success.length > 0){
+                       $('.mobile-suggestions').addClass('show');
+                       for(var i = 0; i < data.success.length; i++){
+                           console.log(data.success[i].name);
+                           htmld += '<li class="suggestion-list-item">';
+                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '</a>';
+                           htmld += '</li>';
+
+                       }
+                       $('#setsuggestionlistmob').html(htmld);
+                    }else{
+                       $('.mobile-suggestions').removeClass('show');
+                    }
+
+                }
+            }
+        });
+
+
+
+        if($("#responsivesearch-field" ).val().length === 0){
+            $('.mobile-suggestions').removeClass('show');
+        }
+
+
+    });
+
+
+</script> 
+<script>
+$(document).ready(function() {
+
+    let mainprice = 3;
+    $("#customforminput").hide();
+    $("#plusclick").show();
+    $("#plusclick").on("click", function() {
+        $("#customforminput").show();
+        $("#plusclick").hide();
+    });
+
+    $(".setprice").on("click", function() {
+        $(".setprice").removeClass("border-dark");
+        $(this).addClass("border-dark");
+        let pricein = $(this).attr("data-number");
+        $("#customforminput").hide();
+        $("#plusclick").show(); 
+       let totalprice = pricein * mainprice;
+       $("#setcurrentprice").html("$"+totalprice);
+    });
+
+$("#customin").on("change keyup blur", function() {
+
+    let keyvalue = $("#customin").val();
+
+    if(keyvalue > 1000){
+        $("#thirdproduct").addClass("d-none");
+    }else{
+        let newtotal = keyvalue * mainprice;
+        $(".setprice").removeClass("border-dark");
+        $("#setcurrentprice").html("$"+newtotal);
+         $("#thirdproduct").removeClass("d-none");
+    }
+
+    
+
+});
+
+});
+</script>
+</body>
+</html>

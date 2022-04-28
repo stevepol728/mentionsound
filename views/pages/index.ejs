@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../layouts/head'); %>
+</head>
+<body>
+<!-- HOME HEADER SECTION START -->
+<div class="header-wrapper"> 
+  <!-- HOME HEADER START -->
+  <%- include('../layouts/header'); %>
+  <!-- HOME HEADER END --> 
+</div>
+<!-- HOME HEADER SECTION END --> 
+
+<!-- HOME BANNER SECTION START -->
+<section class="home-banner">
+  <div class="home-banner-descriptions">
+    <div class="description">
+      <h1 class="home-title"> Find The Perfect <br>
+        Sound Effect. </h1>
+      <p class="text">449,779 Available Sounds. Library Updated Weekly. Unlimited Downloads.</p>
+      <a href="/products" class="btn-sound">Buy Sound Effects</a> </div>
+  </div>
+  <div class="banner-cover-image"> <img src="frontend/images/home-banner/home-banner.jpg" alt="home-banner"> </div>
+</section>
+<!-- HOME BANNER SECTION END --> 
+
+<!-- FEATURED SOUND CATEGORY SECTION START -->
+<section class="featured-categories">
+  <div class="container">
+    <div class="featuerd-box">
+      <h2 class="featured-title"> Featured Sound Effect Categories </h2>
+      <div class="featured">
+        <div class="featured-category">
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/walla.jpg" alt="featured-categories-image"> </div>
+            <a href="/walla" class="card-link" title="walla">Walla</a> </div>
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/whoosh.jpg" alt="featured-categories-image"> </div>
+            <a href="/whoosh" class="card-link" title="whoosh">Whoosh</a> </div>
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/wind.jpg" alt="featured-categories-image"> </div>
+            <a href="/wind" class="card-link" title="wind">Wind</a> </div>
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/footsteps.jpg" alt="featured-categories-image"> </div>
+            <a href="/footsteps" class="card-link" title="footsteps">Footsteps</a> </div>
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/cartoon.jpg" alt="featured-categories-image"> </div>
+            <a href="/cartoon" class="card-link" title="cartoon">Cartoon</a> </div>
+          <div class="category-card">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/drones.jpg" alt="featured-categories-image"> </div>
+            <a href="/drones" class="card-link" title="drones">Drones</a> </div>
+        </div>
+        <div class="featured-category-half">
+          <div class="card-category">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/menus-and-interfaces.jpg" alt="featured-categories-image"> </div>
+            <a href="/menus-and-interfaces" class="card-link" title="MENUS & INTERFACES">MENUS & INTERFACES</a> </div>
+          <div class="card-category">
+            <div class="card-cap"> <img src="frontend/images/categories/featured-sound-effect/ambience.jpg" alt="featured-categories-image"> </div>
+            <a href="/ambience" class="card-link" title="AMBIENCE">AMBIENCE</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FEATURED SOUND CATEGORY SECTION END --> 
+
+<!-- BROWSE SOUNDS BY START -->
+<section class="browse-sound">
+  <div class="container">
+    <div class="browse-sound-content">
+      <h2 class="borwse-title">Browse sounds by</h2>
+      
+      <!-- BROWSE BY NAV START -->
+      <ul class="nav nav-tabs" id="browseBySoundTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab" aria-controls="latest" aria-selected="true">latest</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tags-tab" data-bs-toggle="tab" data-bs-target="#tags" type="button" role="tab" aria-controls="tags" aria-selected="false">tags</button>
+        </li>
+      </ul>
+      <!-- BROWSE BY TAB END --> 
+      
+      <!-- TAB CONTENTS START -->
+      <div class="tab-content" id="browseBySoundTabContent"> 
+        <!-- BROWSE LATEST TAB START -->
+        <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+          <div class="browse-latest">
+            <div class="browse-card">
+              <div class="card-cap"> <img src="frontend/images/browse-sounds/latest/beverly-hills.jpg" alt="browse-latest-image"> </div>
+              <a href="/exteriors" class="card-link" title="EXTERRIORS/ STREET">EXTERRIORS</a> </div>
+            <div class="browse-card">
+              <div class="card-cap"> <img src="frontend/images/browse-sounds/latest/unleash-the-hounds.jpg" alt="browse-latest-image"> </div>
+              <a href="/animals" class="card-link" title="UNLEASH THE HOUNDS">ANIMALS</a> </div>
+            <div class="browse-card">
+              <div class="card-cap"> <img src="frontend/images/browse-sounds/latest/warped.jpg" alt="browse-latest-image"> </div>
+              <a href="/comic-film-fx" class="card-link" title="WARPED">COMIC & FILM FX</a> </div>
+            <div class="browse-card">
+              <div class="card-cap"> <img src="frontend/images/browse-sounds/latest/spandex-capes.jpg" alt="browse-latest-image"> </div>
+              <a href="/interiors" class="card-link" title="SPANDEX & CAPES">INTERIORS</a> </div>
+          </div>
+        </div>
+        <!-- BROWSE LATEST TAB END --> 
+        
+        <!-- BROWSE LOCATION TAB START --> 
+        
+        <!-- BROWSE LOCATION TAB END --> 
+        
+        <!-- BROWSE TAG TAB START -->
+        <div class="tab-pane fade" id="tags" role="tabpanel" aria-labelledby="tags-tab">
+          <div class="browse-tag"> <a href="/tag/vocals" class="tag-card" title="Portugal">Vocals</a> <a href="/tag/steady-wav" class="tag-card" title="Portugal">Steady wav</a> <a href="/tag/insects" class="tag-card" title="Portugal">Insects</a> <a href="/tag/spandex-and-capes" class="tag-card" title="Portugal">Spandex and capes</a> <a href="tag/shopping-center" class="tag-card" title="Portugal">Shopping center</a> <a href="tag/drone" class="tag-card" title="Portugal">Drone</a> <a href="tag/rattle" class="tag-card" title="Portugal">Rattle</a> <a href="tag/jogging" class="tag-card" title="Portugal">Jogging</a> </div>
+        </div>
+        <!-- BROWSE TAG TAB END --> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BROWSE SOUNDS BY END --> 
+
+<!-- FEATURING SOUND DESIGNER-RECORD SECTION START -->
+<section class="sound-designer">
+  <div class="container">
+    <div class="sound-designer-content">
+      <h2 class="featuring-title">Featuring sound designers & recordists from</h2>
+      <div class="featured">
+        <div class="featured-category">
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/tenet.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="TENET">TENET</p>
+          </div>
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/westworld.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="WESTWORLD">WESTWORLD</p>
+          </div>
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/the-revenant.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="THE REVENAN">THE REVENAN</p>
+          </div>
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/mad-max-fury.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="MAD MAX">MAD MAX</p>
+          </div>
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/black-swan.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="BLACK SWAN">BLACK SWAN</p>
+          </div>
+          <div class="featuring-card">
+            <div class="card-cap"> <img src="frontend/images/sound-designers-recordists/baby-driver.jpg" alt="featured-image"> </div>
+            <p class="featured-title" title="BABY DRIVER">BABY DRIVER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FEATURING SOUND DESIGNER-RECORD SECTION END --> 
+
+<!-- HOME DISCOVER SECTION START -->
+<section class="home-discover">
+  <div class="container">
+    <div class="home-discover-content">
+      <h1 class="discover-title">Discover the world’s most widely used sound effects platform</h1>
+      <div class="discover-counters">
+        <div class="card-counter">
+          <h1 class="counter-title" data-targets="2901409">0</h1>
+          <p class="counter-text">Registered Users</p>
+        </div>
+        <div class="card-counter">
+          <h1 class="counter-title" data-targets="449779">0</h1>
+          <p class="counter-text">No. of Sounds</p>
+        </div>
+      </div>
+      <div class="discovers">
+        <div class="card-discover">
+          <div class="card-discover-header">
+            <div class="card-cap"> <img src="frontend/images/discover/sound.png" alt="discover-image"> </div>
+          </div>
+          <div class="card-discover-body">
+            <h4 class="title">A focus on Sound</h4>
+            <p class="text"> mentionsound focuses solely on professional sound effects, with curated sounds added weekly. </p>
+          </div>
+        </div>
+        <div class="card-discover">
+          <div class="card-discover-header">
+            <div class="card-cap"> <img src="frontend/images/discover/twice.png" alt="discover-image"> </div>
+          </div>
+          <div class="card-discover-body">
+            <h4 class="title">Twice as Big</h4>
+            <p class="text"> We are the first and most popular sfx library for unlimited downloads - twice as big as most others. </p>
+          </div>
+        </div>
+        <div class="card-discover">
+          <div class="card-discover-header">
+            <div class="card-cap"> <img src="frontend/images/discover/royality.png" alt="discover-image"> </div>
+          </div>
+          <div class="card-discover-body">
+            <h4 class="title">Royalty Free Sound Effects</h4>
+            <p class="text"> You can use any sound as many times as you like, without any extra fees. </p>
+          </div>
+        </div>
+        <div class="card-discover">
+          <div class="card-discover-header">
+            <div class="card-cap"> <img src="frontend/images/discover/service.png" alt="discover-image"> </div>
+          </div>
+          <div class="card-discover-body">
+            <h4 class="title">Great Customer Service</h4>
+            <p class="text"> Our support staff promises to respond to all inquiries within 24 hours. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HOME DISCOVER SECTION END --> 
+
+<!-- OUR CLIENTS SECTION START -->
+<section class="our-clients">
+  <div class="our-clients-title">
+    <h2 class="title"> <span class="title-text">Trusted by</span> <span class="title-text">Leading Brands,</span> <span class="title-text">Agencies, Networks</span> <span class="title-text">and Hollywood Studios.</span> </h2>
+  </div>
+  <div class="our-clients-bg">
+    <div class="our-clients-content">
+      <div class="our-client-descriptions">
+        <div class="clients">
+          <div class="clientbox"> <img src="frontend/images/clients/brands/netflix.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/tesla.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/vice.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/apple.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/konami.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/microsoft.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/ogilvy.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/disney.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/hbo.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/aljazeera.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/guitarhero.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/playstation.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/discovery.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/zynga.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/snapchat.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/pixar.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/comedy.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/nickelodeon.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/nokia.png" alt="our-clients-brand"> </div>
+          <div class="clientbox"> <img src="frontend/images/clients/brands/bbc.png" alt="our-clients-brand"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- OUR CLIENTS SECTION END --> 
+
+<!-- HOME CLIENT SECTION START -->
+<section class="home-client">
+  <div class="container">
+    <div class="home-client-content">
+      <hgroup class="home-client-titles">
+        <h2 class="title">Sound like a Pro.</h2>
+        <h3 class="subtitle"> <a href="/products" class="sublink" target="_blank">Get started for free.</a> </h3>
+      </hgroup>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+  <%- include('../layouts/footer'); %>
+</footer>
+<!-- FOOTER SECTION END --> 
+
+<!-- BOOTSTRAP SCRIPT --> 
+<script src="frontend/js/bootstrap.bundle.min.js"></script> 
+<script src="frontend/js/counter.js"></script> 
+<script src="frontend/js/responsive-search.js"></script> 
+<script src="frontend/js/jquery-3.5.1.min.js"></script> 
+<script src="frontend/js/script.js"></script>
+<script>
+
+    $( "#search-field" ).keyup(function() {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'GET',
+            url: "search",
+            data: { 'searchkey': $( "#search-field" ).val() },
+            //datatype: 'JSON',
+            success: function (data) {
+                var htmld = '';
+                if (data.success) {
+                    if(data.success.length > 0){
+                       $('.search-suggestions').addClass('show');
+                       for(var i = 0; i < data.success.length; i++){
+                           console.log(data.success[i].name);
+                           htmld += '<li class="suggestion-list-item">';
+                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '</a>';
+                           htmld += '</li>';
+
+                       }
+                       $('#setsuggestionlist').html(htmld);
+                    }else{
+                       $('.search-suggestions').removeClass('show');
+                    }
+
+                }
+            }
+        });
+
+
+
+    if($("#search-field" ).val().length === 0){
+            $('.search-suggestions').removeClass('show');
+        }
+
+
+    });
+
+
+
+    $( "#responsivesearch-field" ).keyup(function() {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'GET',
+            url: "search",
+            data: { 'searchkey': $( "#responsivesearch-field" ).val() },
+            //datatype: 'JSON',
+            success: function (data) {
+                var htmld = '';
+                if (data.success) {
+                    if(data.success.length > 0){
+                       $('.mobile-suggestions').addClass('show');
+                       for(var i = 0; i < data.success.length; i++){
+                           console.log(data.success[i].name);
+                           htmld += '<li class="suggestion-list-item">';
+                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '</a>';
+                           htmld += '</li>';
+
+                       }
+                       $('#setsuggestionlistmob').html(htmld);
+                    }else{
+                       $('.mobile-suggestions').removeClass('show');
+                    }
+
+                }
+            }
+        });
+
+
+
+        if($("#responsivesearch-field" ).val().length === 0){
+            $('.mobile-suggestions').removeClass('show');
+        }
+
+
+    });
+
+
+</script> 
+<script>
+</script> 
+</script>
+</body>
+</html>
