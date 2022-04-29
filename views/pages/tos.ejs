@@ -1,184 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="csrf-token" content="uacWIBq0fOqJC8cCBeI6FzHVlZgWO31KZVMiswc4">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="mentionsound">
-<title>Terms of Use</title>
-<!-- SITE FAVICON -->
-<link rel="shortcut icon" href="" type="image/png">
-<!-- FONT AWESOME CDN -->
-<!-- BOOTSTRAP LINK -->
-<link rel="stylesheet" href="frontend/css/all.min.css">
-<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-<!-- CUSTOM STYLESHEET LINK -->
-<link rel="stylesheet" href="frontend/css/style.css">
-<script type="text/javascript">
-        function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-
-    </script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <%- include('../layouts/head'); %>
 </head>
 <body>
 <!-- HOME HEADER SECTION START -->
 <div class="header-wrapper"> 
   <!-- HOME HEADER START -->
-  <header class="home-header">
-    <div class="headermenu"> 
-      <!-- COMPANY BRAND START -->
-      <figure class="brand"> <a href="/" class="logo"> <img src="frontend/images/logo.png" alt="site-logo"> </a> </figure>
-      <!-- COMPANY BRAND END --> 
-      
-      <!-- MOBILE MENU HAMBURGER-ICON START -->
-      <button class="hamburger-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-      </svg> </button>
-      <!-- MOBILE MENU HAMBURGER-ICON END --> 
-      
-      <!-- MOBILE MENU SIDEBAR START -->
-      <aside class="mobile-menu-sidebar">
-        <div class="offcanvas offcanvas-start mobmenu" data-bs-scroll="true" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
-          <div class="offcanvas-header"> 
-            <!-- COMPANY BRAND START --> 
-            <a href="/" class="logo"> <img src="frontend/images/logo-white.png" alt="site-logo"> </a> 
-            <!-- COMPANY BRAND END -->
-            
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-            <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
-            </svg> </button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="mobile-nav">
-              <div class="mobilemenu"> 
-                <!-- MAIN MENU START -->
-                <ul class="mobile-menu-list">
-                  <li class="mobile-menu-list-item"> <a href="products.html" class="mobile-menu-list-link">PRICING</a> </li>
-                  <li class="mobile-menu-list-item"> <a href="" class="mobile-menu-list-link">BLOG</a> </li>
-                  <li class="mobile-menu-list-item"> <a href="faq.html" class="mobile-menu-list-link">FAQ</a> </li>
-                  <li class="mobile-menu-list-item"> <a href="sfxhd.html" class="mobile-menu-list-link">SFXHD</a> </li>
-                </ul>
-                <!-- MAIN MENU END -->
-                
-                <div class="divider"></div>
-                
-                <!-- LOGGED IN MENU START --> 
-                
-                <!-- LOGGED IN MENU END --> 
-                
-              </div>
-              
-              <!-- LOGIN-REGISTER MODAL LIST START -->
-              
-              <ul class="mobilelogin-register-list">
-                <!-- CLICK FOR LOGIN -->
-                
-                <li class="mobilelogin-register-list-item"> <a href="/login" class="mobilelogin-register-list-link"> Login </a> </li>
-                <!-- CLICK FOR REGISTER -->
-                <li class="mobilelogin-register-list-item"> <a href="/register" class="mobilelogin-register-list-link"> Register </a> </li>
-                <!-- CLICK FOR LOGIN -->
-                
-              </ul>
-              <!-- LOGIN-REGISTER MODAL LIST END --> 
-              
-            </nav>
-          </div>
-        </div>
-      </aside>
-      <!-- MOBILE MENU SIDEBAR END --> 
-      
-      <!-- SEARCH FORM START -->
-      <form class="search-form">
-        <button class="btn-search"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c1c1c1" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg> </button>
-        <div class="inputbox">
-          <input type="search" placeholder="Search for sound effects" autocomplete="off" class="search-input" id="search-field">
-          <div class="loaderbox">
-            <div class="loading-spinner"></div>
-          </div>
-        </div>
-        
-        <!-- SEARCH SUGGESTIONS START -->
-        <div class="search-suggestions">
-          <ul class="suggestion-list" id="setsuggestionlist">
-          </ul>
-        </div>
-        <!-- SEARCH SUGGESTIONS END -->
-      </form>
-      
-      <!-- MOBILE SEARCH ICON START -->
-      <div class="responsive-search">
-        <button class="btn-responsivesearch"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c1c1c1" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg> </button>
-      </div>
-      <!-- SEARCH FORM ICON END --> 
-      
-      <!-- HEADER MAIN NAV START -->
-      <nav class="main-nav"> 
-        <!-- MAIN MENU START -->
-        <ul class="main-list">
-          <li class="main-list-item"> <a href="products.html" class="main-list-link">PRICING</a> </li>
-          <li class="main-list-item"> <a href="#" class="main-list-link">BLOG</a> </li>
-          <li class="main-list-item"> <a href="faq.html" class="main-list-link">FAQ</a> </li>
-          <li class="main-list-item"> <a href="sfxhd.html" class="main-list-link">SFXHD</a> </li>
-        </ul>
-        <!-- MAIN MENU END --> 
-        
-        <!-- LOGIN REGISTER PAGE LINK -->
-        <ul class="login-register-list">
-          <!-- CLICK FOR LOGIN -->
-          <li class="login-register-modal-list-item"> <a href="/login" class="login-register-modal-list-link"> Login </a> </li>
-          <!-- DIVIDER -->
-          <li class="login-register-list-item">/</li>
-          <!-- CLICK FOR REGISTER -->
-          <li class="login-register-modal-list-item"> <a href="/register" class="login-register-modal-list-link"> Register </a> </li>
-        </ul>
-        <!-- LOGIN-REGISTER PAGE END --> 
-        <!-- LANGUAGE CHANGE SECTION START --> 
-        
-        <!-- LANGUAGE CHANGE SECTION END --> 
-        
-        <!-- SOCIAL-LIST START -->
-        <ul class="social-list">
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-facebook-f"></i> </a> </li>
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-twitter"></i> </a> </li>
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-instagram"></i> </a> </li>
-        </ul>
-        <!-- SOCIAL-LIST END --> 
-      </nav>
-      <!-- HEADER MAIN NAV END --> 
-    </div>
-    
-    <!-- MOBILE SEARCH BOX START -->
-    <div class="responsive-search-box">
-      <form class="responsive-search-form">
-        <button class="btn-search"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c1c1c1" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg> </button>
-        <div class="inputbox">
-          <input type="search" placeholder="Search for sound effects" autocomplete="off" class="search-input" id="responsivesearch-field">
-          <div class="loaderbox">
-            <div class="loading-spinner"></div>
-          </div>
-        </div>
-        
-        <!-- SEARCH SUGGESTIONS START -->
-        <div class="search-suggestions mobile-suggestions">
-          <ul class="suggestion-list" id="setsuggestionlistmob">
-          </ul>
-        </div>
-        <!-- SEARCH SUGGESTIONS END -->
-      </form>
-    </div>
-    <!-- MOBILE SEARCH BOX END -->
-    
-    <div class="header-overlay"></div>
-  </header>
+  <%- include('../layouts/header'); %>
   <!-- HOME HEADER END --> 
 </div>
 <!-- HOME HEADER SECTION END --> 
@@ -200,9 +29,9 @@
       <!-- TERMS-OF-USE SIDEBAR START -->
       <aside class="billing-sidebar">
         <ul class="billinglist">
-          <li class="billinglist-item"> <a href="privacy.html" class="billinglist-link">Privacy Policy</a> </li>
-          <li class="billinglist-item"> <a href="license.html" class="billinglist-link">Licence</a> </li>
-          <li class="billinglist-item"> <a href="tos.html" class="billinglist-link active">Terms & Conditions</a> </li>
+          <li class="billinglist-item"> <a href="/privacy" class="billinglist-link">Privacy Policy</a> </li>
+          <li class="billinglist-item"> <a href="/license" class="billinglist-link">Licence</a> </li>
+          <li class="billinglist-item"> <a href="/tos" class="billinglist-link active">Terms & Conditions</a> </li>
         </ul>
       </aside>
       <!-- TERMS-OF-USE END START --> 
@@ -314,64 +143,7 @@
 
 <!-- FOOTER SECTION START -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-infos"> 
-        <!-- FOOTER LOGO START -->
-        <figure class="footer-logo"> <a href="/" class="logo"> <img src="frontend/images/logo-white.png" alt="site-logo"> </a>
-          <div id="google_translate_element" class="change-language"></div>
-        </figure>
-        <!-- FOOTER LOGO END --> 
-        
-        <!-- FOOTER NAV START -->
-        <nav class="footer-nav">
-          <div class="footlist-info">
-            <h4 class="footlist-title">Product</h4>
-            <ul class="footlist">
-              <li class="footlist-item"> <a href="browse.html" class="footlist-link">Browse Sounds</a> </li>
-              <li class="footlist-item"> <a href="products.html" class="footlist-link">Pricing</a> </li>
-              <li class="footlist-item"> <a href="faq.html" class="footlist-link">FAQ</a> </li>
-            </ul>
-          </div>
-          <div class="footlist-info">
-            <h4 class="footlist-title">Company</h4>
-            <ul class="footlist">
-              <li class="footlist-item"> <a href="job.html" class="footlist-link">Jobs</a> </li>
-              <li class="footlist-item"> <a href="" class="footlist-link">Blog</a> </li>
-              <li class="footlist-item"> <a href="education.html" class="footlist-link">Education</a> </li>
-              <li class="footlist-item"> <a href="contact.html" class="footlist-link">Contact</a> </li>
-              <li class="footlist-item"> <a href="affiliate.html" class="footlist-link">Affiliates</a> </li>
-            </ul>
-          </div>
-          <div class="footlist-info">
-            <h4 class="footlist-title">Legal</h4>
-            <ul class="footlist">
-              <li class="footlist-item"> <a href="license.html" class="footlist-link">Licence</a> </li>
-              <li class="footlist-item"> <a href="tos.html" class="footlist-link">Terms of Use</a> </li>
-              <li class="footlist-item"> <a href="privacy.html" class="footlist-link">Privacy Policy</a> </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- FOOTER NAV END --> 
-        
-        <!-- FOOTER SOCIAL LIST START -->
-        <ul class="social-list">
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-facebook-f"></i> </a> </li>
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-twitter"></i> </a> </li>
-          <li class="social-list-item"> <a href="#" target="_blank" class="social-list-link"> <i class="fab fa-instagram"></i> </a> </li>
-        </ul>
-        <!-- FOOTER SOCIAL LIST END --> 
-        
-      </div>
-      <div class="copyright">
-        <p class="copyright-text">mentionsound is owned and operated by Peterfield Limited </p>
-        <p class="copyright-text">Company number 12795957 </p>
-        <p class="copyright-text">Office 28b Cinnamon Park Crab lane, Fearnhead Warrington WA2 0XP </p>
-        <p class="copyright-text">Governed and controlled by the laws of the UK </p>
-        <p class="copyright-text">mentionsound &copy; 2021, All rights reserved.</p>
-      </div>
-    </div>
-  </div>
+  <%- include('../layouts/footer'); %>
 </footer>
 <!-- FOOTER SECTION END --> 
 

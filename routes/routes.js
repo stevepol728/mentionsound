@@ -1,9 +1,8 @@
+const auth = require('../middleware/auth');
+
 module.exports = function(app) {
   
     const authController = require("../controllers/authController");
-    // const userController = require("../controllers/userController");
-    // const articleController = require("../controllers/articleController");
-    // const ticketController = require("../controllers/ticketController");
   
     const {
       validateRegister,
@@ -24,7 +23,14 @@ module.exports = function(app) {
       validateLogin,
       awaitHandlerFactory(authController.userLoginWithEmail)
     );
-  
+    
+    app.post('/auth/updateprofile',
+      awaitHandlerFactory(authController.profileUpdate)
+    );
+
+    app.delete('/auth/deleteAccount', auth(),
+      awaitHandlerFactory(authController.deleteAccount)
+    );
     // // article routes
     // app.get('/article', auth(), articleController.listAll);
     // app.get('/article/:id', auth(),articleController.getObjectById);

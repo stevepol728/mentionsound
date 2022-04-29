@@ -12,6 +12,7 @@ const createUserWithEmail = async (req, res, next) => {
   checkValidation(req);
   // Check exist
   const { email } = req.body;
+
   try {
     let user = await User.findOne({ email });
     if (user) {
@@ -55,6 +56,7 @@ const userLoginWithEmail = async (req, res) => {
 
   checkValidation(req);
   const { email, password } = req.body;
+
   try {
     let user = await User.findOne({ email });
 
@@ -99,6 +101,59 @@ const userLoginWithEmail = async (req, res) => {
   }
 };
 
+//profileUpdate handler
+const profileUpdate = async (req, res) => {
+
+  checkValidation(req);
+  const { email, password, password_confirmation } = req.body;
+
+  try {
+    let user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(400).json({ message: 'This Email not exist' });
+    }
+
+    if (req.body.password !== password_confirmation) {
+      return res.status(400).json({ message: 'Password does not match' });
+    }
+
+    await hashPassword(req);
+
+    const password = req.body.password;
+
+    try {
+      await User.updateOne({email}, { $set: { password }});
+      res.send({ type: "success"});
+   } catch (e) {
+      return res.status(500).json({ message: 'Something went wrong' });
+   }
+  } catch (err) {
+    console.error(err.message);
+    return res.status(500).json({ message: 'Something went wrong' });
+  }
+};
+
+
+
+//profileUpdate handler
+const deleteAccount = async (req, res) => {
+
+  const email = req.body.currentUser;
+
+  try {
+    let user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(400).json({ message: 'This Email not exist' });
+    }
+    await user.remove();
+    res.send({ type: "success"});
+  } catch (err) {
+    console.error(err.message);
+    return res.status(500).json({ message: 'Something went wrong' });
+  }
+};
 
 //check validation express-validator
 const checkValidation = (req) => {
@@ -110,5 +165,7 @@ const checkValidation = (req) => {
 
 module.exports = {
   createUserWithEmail,
-  userLoginWithEmail
+  userLoginWithEmail,
+  profileUpdate,
+  deleteAccount
 };

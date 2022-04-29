@@ -109,7 +109,15 @@
         
         <!-- BROWSE TAG TAB START -->
         <div class="tab-pane fade" id="tags" role="tabpanel" aria-labelledby="tags-tab">
-          <div class="browse-tag"> <a href="/tag/vocals" class="tag-card" title="Portugal">Vocals</a> <a href="/tag/steady-wav" class="tag-card" title="Portugal">Steady wav</a> <a href="/tag/insects" class="tag-card" title="Portugal">Insects</a> <a href="/tag/spandex-and-capes" class="tag-card" title="Portugal">Spandex and capes</a> <a href="tag/shopping-center" class="tag-card" title="Portugal">Shopping center</a> <a href="tag/drone" class="tag-card" title="Portugal">Drone</a> <a href="tag/rattle" class="tag-card" title="Portugal">Rattle</a> <a href="tag/jogging" class="tag-card" title="Portugal">Jogging</a> </div>
+          <div class="browse-tag"> <a href="/vocals" class="tag-card" title="Portugal">Vocals</a> 
+            <a href="/steady-wav" class="tag-card" title="Portugal">Steady wav</a> 
+            <a href="/insects" class="tag-card" title="Portugal">Insects</a> 
+            <a href="/spandex-and-capes" class="tag-card" title="Portugal">Spandex and capes</a> 
+            <a href="/shopping-center" class="tag-card" title="Portugal">Shopping center</a> 
+            <a href="/drone" class="tag-card" title="Portugal">Drone</a> 
+            <a href="/rattle" class="tag-card" title="Portugal">Rattle</a> 
+            <a href="/jogging" class="tag-card" title="Portugal">Jogging</a> 
+          </div>
         </div>
         <!-- BROWSE TAG TAB END --> 
       </div>
@@ -297,7 +305,7 @@
                        for(var i = 0; i < data.success.length; i++){
                            console.log(data.success[i].name);
                            htmld += '<li class="suggestion-list-item">';
-                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '<a href="/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
                            htmld += '</a>';
                            htmld += '</li>';
 
@@ -343,7 +351,7 @@
                        for(var i = 0; i < data.success.length; i++){
                            console.log(data.success[i].name);
                            htmld += '<li class="suggestion-list-item">';
-                           htmld += '<a href="/tag/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
+                           htmld += '<a href="/'+data.success[i].slug +'" class="suggestion-list-link">'+data.success[i].name;
                            htmld += '</a>';
                            htmld += '</li>';
 
