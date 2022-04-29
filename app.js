@@ -195,6 +195,33 @@ app.get('/favoritelist', auth(), function(req, res) {
   }
 });
 
+app.get('/checkout/purchase/1001', auth(), function(req, res) {
+  if(req.body.currentUser !== undefined) {
+    res.render('pages/checkout.ejs', { title: 'FavoriteList | mentionsound', userEmail: req.body.currentUser, id: 1001});
+  } else {
+    res.redirect("/login");
+  }
+});
+
+
+
+app.get('/checkout/purchase/1002', auth(), function(req, res) {
+  if(req.body.currentUser !== undefined) {
+    res.render('pages/checkout.ejs', { title: 'FavoriteList | mentionsound', userEmail: req.body.currentUser, id: 1002});
+  } else {
+    res.redirect("/login");
+  }
+});
+
+
+
+app.get('/checkout/purchase/1003', auth(), function(req, res) {
+  if(req.body.currentUser !== undefined) {
+    res.render('pages/checkout.ejs', { title: 'FavoriteList | mentionsound', userEmail: req.body.currentUser, id: 1003});
+  } else {
+    res.redirect("/login");
+  }
+});
 
 
 app.use(express.static(path.resolve(__dirname, 'public')));
