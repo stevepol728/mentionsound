@@ -9,7 +9,7 @@ dotenv.config();
 /*******Auth Controller************/
 
 const createUserWithEmail = async (req, res, next) => {
-  checkValidation(req);
+  checkValidation(req, res);
   // Check exist
   const { email } = req.body;
 
@@ -54,7 +54,7 @@ const createUserWithEmail = async (req, res, next) => {
 //login handler
 const userLoginWithEmail = async (req, res) => {
 
-  checkValidation(req);
+  checkValidation(req, res);
   const { email, password } = req.body;
 
   try {
@@ -104,7 +104,7 @@ const userLoginWithEmail = async (req, res) => {
 //profileUpdate handler
 const profileUpdate = async (req, res) => {
 
-  checkValidation(req);
+  checkValidation(req, res);
   const { email, password, password_confirmation } = req.body;
 
   try {
@@ -156,7 +156,7 @@ const deleteAccount = async (req, res) => {
 };
 
 //check validation express-validator
-const checkValidation = (req) => {
+const checkValidation = (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ message: 'Validation faild' });

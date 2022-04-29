@@ -43,11 +43,11 @@ app.get('/', auth(), function(req, res) {
 });
 
 app.get('/register', function(req, res) {
-  res.render('pages/register.ejs');
+  res.render('pages/register.ejs', {title: 'Register | mentionsound'});
 });
 
 app.get('/login', function(req, res) {
-  res.render('pages/login.ejs');
+  res.render('pages/login.ejs', {title: 'Login | mentionsound'});
 });
 
 app.get('/products', auth(), function(req, res) {
@@ -140,7 +140,7 @@ app.get('/home', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/home.ejs', { title: 'Account | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -148,7 +148,7 @@ app.get('/billingoverview', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/billingoverview.ejs', { title: 'Overview | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -157,7 +157,7 @@ app.get('/paymentmethod', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/paymentmethod.ejs', { title: 'PaymentMethod | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -166,7 +166,7 @@ app.get('/editbill', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/editbill.ejs', { title: 'Billing | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -175,7 +175,7 @@ app.get('/invoice', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/invoice.ejs', { title: 'Invoice | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -183,7 +183,7 @@ app.get('/downloadlist', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/downloadlist.ejs', { title: 'DownloadList | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
@@ -191,7 +191,7 @@ app.get('/favoritelist', auth(), function(req, res) {
   if(req.body.currentUser !== undefined) {
     res.render('pages/favoritelist.ejs', { title: 'FavoriteList | mentionsound', userEmail: req.body.currentUser});
   } else {
-    res.redirect("/");
+    res.redirect("/login");
   }
 });
 
