@@ -1,0 +1,26 @@
+<%- include('../layouts/head'); %>
+<%- include('../layouts/header'); %>
+ <%- include('../layouts/footer'); %>
+
+
+
+username: root
+password: Mention123
+IP Address: 190.97.165.227
+
+tar xvf node-v14.19.0-linux-x64.tar.xz
+mv node-v14.19.0-linux-x64 nodeext
+mkdir ~/bin
+cp nodeext/bin/node ~/bin
+cd ~/bin
+ln -s ../nodeext/lib/node_modules/npm/bin/npm-cli.js npm
+node --version
+npm --version
+
+
+sudo lsof -i :5000
+this will list all PID listening on this port, once you have the PID you can terminate it with the following:
+
+kill -9 {PID}
+
+wget http://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.17.5ubuntu5.2_amd64.deb --header "Referer: security.ubuntu.com"
