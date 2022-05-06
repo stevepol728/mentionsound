@@ -223,6 +223,10 @@ app.get('/checkout/purchase/1003', auth(), function(req, res) {
   }
 });
 
+app.get('/subcategory/:kind/:id', auth(), function(req, res) {
+  res.render('pages/subcategory.ejs', { title: `${req.params.id} Sound Effect | mentionsound`, userEmail: req.body.currentUser, kind: req.params.kind, id: req.params.id });
+})
+
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 

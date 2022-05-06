@@ -93,7 +93,7 @@
                 success: function (data) {
                     toastr.success('Successfully logged in.');
                     var delay = 2000;
-                    setTimeout(function(){	window.location = '/home'; }, delay); 
+                    setTimeout(function(){	window.location = '/'; }, delay); 
                 },
                 error: function (err) {
                     var error = err.responseJSON;

@@ -7,6 +7,7 @@ const auth = () => {
   return async function (req, res, next) {
     try {
         let authHeader = req.cookies['x-access-token'];
+        console.log(authHeader);
         const bearer = "Bearer ";
         if (!authHeader) {
           throw new HttpException(401, "Access denied. No credentials sent!");
